@@ -1,38 +1,211 @@
-.App {
+body {
+  background: radial-gradient(white, navy);
+  margin: 0;
+  padding: 0;
+}
+
+.loading-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.header h1 {
   text-align: center;
+  letter-spacing: 3px;
+  font-size: 40px;
+  margin: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header img {
+  height: 40px;
+  width: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pokemon-contents {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 100px auto;
+  background-color: white;
+  height: 50%;
+  width: 50%;
+  border-radius: 10px;
+  border: 3px solid #333;
+  box-shadow: 2px 2px 12px #333;
+}
+
+.pokemon-contents img {
+  height: 250px;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  transition: .3s ease-in-out;
+}
+
+.pokemon-contents img:hover {
+  transform: scale(1.5);
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title span {
+  font-size: 25px;
+  background: #333;
+  color: gold;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #333;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 9px;
+  padding-right: 20px;
+  background: white;
+  color: #333;
+}
+
+.title p {
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-size: 25px;
+  background: #333;
+  color: gold;
+  padding: 10px;
+  border-radius: 5px;
+  height: 30px;
+  width: auto;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.type {
   color: white;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  margin: 5px;
+  padding: 5px;
+  width: auto;
+  border-radius: 5px;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Pokemon Types */
+
+#poison {
+  background: linear-gradient(lightgray, rgba(96,0,134,1));
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#grass {
+  background: linear-gradient(lightgray, forestgreen);
+}
+
+#fire {
+  background: linear-gradient(lightgray, red);
+}
+
+#water {
+  background: linear-gradient(lightgray, blue);
+}
+
+#flying {
+  background: linear-gradient(lightgray, #6699ff);
+}
+
+#bug {
+  background: linear-gradient(lightgray, #99ff33);
+}
+
+#normal {
+  background: linear-gradient(lightgray, gray);
+}
+
+#electric {
+  background: linear-gradient(lightgray, gold);
+}
+
+#ground {
+  background: linear-gradient(lightgray, #cc6600);
+}
+
+#fairy{
+  background: linear-gradient(lightgray, #ff00ff);
+}
+
+#fighting {
+  background: linear-gradient(lightgray, brown);
+}
+
+#psychic {
+  background: linear-gradient(lightgray, #ff6699);
+}
+
+#rock {
+  background: linear-gradient(lightgray, #999966);
+}
+
+#steel {
+  background: linear-gradient(lightgray, #85adad);
+}
+
+#ice {
+  background: linear-gradient(lightgray, #33ccff);
+}
+
+#ghost {
+  background: linear-gradient(lightgray, #9966ff);
+}
+
+#dragon {
+  background: linear-gradient(lightgray, #6600ff);
+}
+
+#dark {
+  background: linear-gradient(lightgray, #000033);
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  margin: 20px auto;
+}
+
+button {
+  color: #333;
+  padding: 10px;
+  width: 50%;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+button:hover {
+  background-color: gold;
+
 }
